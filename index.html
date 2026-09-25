@@ -3,7 +3,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width"/>
 <meta name="builder" content="Stronglify"/>
-<link rel="icon" type="image/x-icon" href="https://media.stronglify.com/367/favicon-1789775348.svg"/>
+<link rel="icon" type="image/x-icon" href="https://media.stronglify.com/367/favicon-1790369564.svg"/>
 <title>VOLTA: energía sin pausa</title>
 <meta name="description" content="VOLTA, bebida energética hecha en Medellín. Cero sueño, sin azúcar, sin excusas."/>
 <meta name="robots" content="index"/>
@@ -16,7 +16,11 @@ fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;d
 <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={theme:{extend:{colors:{lima:'#D3F00A',rojo:'#F80E0B',tinta:'#2A1FD6'},fontFamily:{poster:['Anton','Impact','sans-serif'],lectura:['Archivo','Helvetica','Arial','sans-serif']}}}}</script>
-<style>@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}</style></head>
+<style>@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}</style>
+<style id="contrast-fix">
+ 
+.isolate.text-lima:has(> img.-z-10, > a > img.-z-10)::before{content:"";position:absolute;inset:0;z-index:-1;background:rgb(0 0 0/.55);pointer-events:none}
+</style></head>
 <body class="selection:bg-rojo selection:text-lima bg-lima text-rojo font-poster uppercase antialiased overflow-x-hidden">
   
   <header class="sticky top-0 z-40 bg-lima">
@@ -28,11 +32,11 @@ fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;d
         
         <a href="./" class="rounded-sm hover:underline decoration-4 underline-offset-4 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-tinta">Inicio</a>
         
-        <a href="page.html" class="rounded-sm hover:underline decoration-4 underline-offset-4 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-tinta">Marca</a>
+        <a href="./page" class="rounded-sm hover:underline decoration-4 underline-offset-4 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-tinta">Nosotros</a>
         
-        <a href="article.html" class="rounded-sm hover:underline decoration-4 underline-offset-4 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-tinta">Diario</a>
+        <a href="./blog" class="rounded-sm hover:underline decoration-4 underline-offset-4 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-tinta">Blog</a>
         
-        <a href="blank.html" class="rounded-sm hover:underline decoration-4 underline-offset-4 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-tinta">Libre</a>
+        <a href="./contact" class="rounded-sm hover:underline decoration-4 underline-offset-4 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-tinta">Contacto</a>
         
       </nav>
       <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" class="md:hidden rounded-xl border-4 border-tinta px-3 py-1 text-2xl leading-none transition duration-200 hover:bg-tinta hover:text-lima active:scale-[0.98] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-tinta">Menú</button>
@@ -41,11 +45,11 @@ fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;d
       
       <a href="./" class="rounded-sm hover:underline decoration-[0.08em] underline-offset-[0.08em] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-lima">Inicio</a>
       
-      <a href="page.html" class="rounded-sm hover:underline decoration-[0.08em] underline-offset-[0.08em] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-lima">Marca</a>
+      <a href="./page" class="rounded-sm hover:underline decoration-[0.08em] underline-offset-[0.08em] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-lima">Nosotros</a>
       
-      <a href="article.html" class="rounded-sm hover:underline decoration-[0.08em] underline-offset-[0.08em] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-lima">Diario</a>
+      <a href="./blog" class="rounded-sm hover:underline decoration-[0.08em] underline-offset-[0.08em] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-lima">Blog</a>
       
-      <a href="blank.html" class="rounded-sm hover:underline decoration-[0.08em] underline-offset-[0.08em] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-lima">Libre</a>
+      <a href="./contact" class="rounded-sm hover:underline decoration-[0.08em] underline-offset-[0.08em] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-lima">Contacto</a>
       
     </nav>
   </header>
